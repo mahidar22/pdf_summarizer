@@ -1,3 +1,8 @@
+import os
+os.makedirs("data/uploads", exist_ok=True)
+os.makedirs("data/vector_db", exist_ok=True)
+
+
 """
 AI PDF Summarizer — Deployed on Render
 """
