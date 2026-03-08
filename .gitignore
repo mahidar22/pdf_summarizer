@@ -1,0 +1,23 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Data (don't upload to git)
+data/uploads/*
+data/vector_db/*
+data/chat_history.db
+
+# Keep the folders but not contents
+!data/uploads/.gitkeep
+!data/vector_db/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
