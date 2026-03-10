@@ -220,7 +220,7 @@ with st.sidebar:
             st.info("Get FREE key: [console.groq.com/keys](https://console.groq.com/keys)")
 
     # Model
-    model = st.selectbox("🧠 Model", [
+    model = ("🧠 Model", [
         "llama-3.1-8b-instant",
     ])
 
@@ -228,7 +228,7 @@ with st.sidebar:
 
     # Upload
     st.markdown("### 📁 Upload PDF")
-    uploaded = st.file_uploader("Choose a PDF file", type=["pdf"])
+    uploaded = st.file_uploader(" ", type=["pdf"])
 
     # Process
     if uploaded and api_key and GROQ_OK and PDF_OK:
