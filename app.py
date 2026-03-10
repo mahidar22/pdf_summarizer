@@ -220,7 +220,7 @@ with st.sidebar:
             st.info("Get FREE key: [console.groq.com/keys](https://console.groq.com/keys)")
 
     # Model
-    model = ("🧠 Model", [
+    model = st.selectbox ("🧠 Model", [
         "llama-3.1-8b-instant",
     ])
 
